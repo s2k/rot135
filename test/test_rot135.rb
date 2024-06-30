@@ -7,7 +7,10 @@ class TestRot135 < Minitest::Test
     refute_nil ::Rot135::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_it_rot13s_hello_world_with_an_exclamationmark
+    assert_equal 'Uryyb Jbeyq!', Rot135.rot('Hello World!')
+  end
+  def test_it_ignores_decimal_digits_and_symbols_by_default
+    assert_equal '42 + 0 ≠ 41.9999', Rot135.rot('42 + 0 ≠ 41.9999')
   end
 end
