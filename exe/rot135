@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
-require_relative "../lib/rot135"
+require_relative '../lib/rot135'
 
 puts Rot135.rot ARGF.read
