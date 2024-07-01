@@ -1,3 +1,7 @@
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+<sup style="font-size:125%;">᛫</sup>
+[![Main workflow: unit tests](https://github.com/s2k/rot135/actions/workflows/main.yml/badge.svg)](https://github.com/s2k/rot135/actions) <sup style="font-size:125%;">᛫</sup>
+
 # Rot135
 
 A small tool to apply [ROT13](https://wikipedia.org/wiki/ROT13) to a given file or STDIN.
