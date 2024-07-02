@@ -6,7 +6,6 @@ require_relative 'rot135/version'
 # Call with `Rot135.rot(string)`.
 #
 module Rot135
-
   class UnknownSpecifierError < StandardError; end
 
   def self.rot(text, *specifiers)
