@@ -14,4 +14,9 @@ class TestRot135 < Minitest::Test
   def test_it_ignores_decimal_digits_and_symbols_by_default
     assert_equal '42 + 0 ≠ 41.9999', Rot135.rot('42 + 0 ≠ 41.9999')
   end
+
+  def test_it_rot5s_base_ten_numbers
+    assert_equal '6789012345', Rot135.rot('1234567890', :rot5)
+    assert_equal '97 + 5 ≠ 96.4444', Rot135.rot('42 + 0 ≠ 41.9999', :rot5)
+  end
 end
