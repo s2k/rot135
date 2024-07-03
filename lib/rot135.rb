@@ -8,9 +8,7 @@ require_relative 'rot135/version'
 module Rot135
   class UnknownSpecifierError < StandardError; end
 
-  def self.rot(text, *specifiers)
-    specifiers = [:rot13] if specifiers.empty?
-
+  def self.rot(text, specifiers: [:rot13])
     specifiers.each do |option|
       case option
       when :rot5
