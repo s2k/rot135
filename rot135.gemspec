@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ['Stephan Kämper']
   spec.email = ['the.tester@seasidetesting.com']
 
-  spec.summary = 'A ROT13 (and ROT5 for digital digits) mini tool'
+  spec.summary = 'A ROT13 (and ROT5 for decimal digits) mini tool'
   spec.description = "'Encrypts' named files or STDIN using ROT13."
   spec.homepage = 'https://github.com/s2k/rot135'
   spec.license = 'MIT'
