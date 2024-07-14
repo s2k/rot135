@@ -2,7 +2,7 @@
 
 # Put environment & setup information here as needed.
 
-EXPECTATIONS_DIR = File.join( File.dirname(__FILE__), '..', 'expected_test_data')
+EXPECTATIONS_DIR = File.join(File.dirname(__FILE__), '..', 'expected_test_data')
 
 require 'minitest'
 
