@@ -1,6 +1,30 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+require 'thor'
 require_relative '../lib/rot135'
 
-puts Rot135.rot ARGF.read
+# The CLI for ROT135
+#
+class Rot135App < Thor
+  def self.exit_on_failure?
+    true
+  end
+
+  desc 'version', 'print version info & exit'
+  def version
+    puts "#{File.basename $PROGRAM_NAME} version #{Rot135::VERSION}"
+  end
+
+  # option :output, aliases: :o, type: :string, default: 'tmp', desc: "Folder used to write output to, default 'tmp'"
+  # option :source, required: true, aliases: :s, type: :string, desc: 'The folder to read the original feature files from'
+  # option :target, aliases: :t, type: :string, default: 'tmp', desc: 'Where the generated files are written to'
+
+  desc 'rot', 'The default task, applies ROT13 to STDIN'
+  def rot
+    puts Rot135.rot(ARGF.read)
+  end
+  default_task :rot
+end
+
+Rot135App.start
