@@ -1,3 +1,5 @@
 Commands:
   rot135 help [COMMAND]  # Describe available commands or one specific command
+  rot135 rot             # The default task, applies ROT13 to STDIN
   rot135 version         # print version info & exit
+
