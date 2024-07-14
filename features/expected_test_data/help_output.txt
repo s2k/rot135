@@ -1,0 +1,3 @@
+Commands:
+  rot135 help [COMMAND]  # Describe available commands or one specific command
+  rot135 version         # print version info & exit
