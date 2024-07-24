@@ -4,10 +4,10 @@
 
 # Rot135
 
-A small tool to apply [ROT13](https://wikipedia.org/wiki/ROT13) to a given file or STDIN.
+A small tool to apply [ROT13](https://wikipedia.org/wiki/ROT13) to STDIN.
 
-It 'encrypts' texts by applying `ROT13` to the characters 'a'-'z' and 'A'-'Z'. no other chacacters will be changed, no
-one with diacritics such as 'š', nor symbols or (decimal) digits.
+It 'encrypts' texts by applying `ROT13` to the characters 'a'-'z' and 'A'-'Z'.  No other characters will be changed, neither
+those with diacritics such as 'š', nor symbols or (decimal) digits.
 
 You _can_ use the command option -5 or --five (hyphen five) to transform decimal digits in a similar way. i.e.
 transforming using the following table
@@ -28,27 +28,23 @@ transforming using the following table
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section
-with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
-Install the gem and add to the application's Gemfile by executing:
-
-    $ bundle add rot135
-
 If bundler is not being used to manage dependencies, install the gem by executing:
 
     $ gem install rot135
 
+When using _Bundler_, add the gem to your `Gemfile`:
+
+    $ bundle add rot135
+
+Then run `bundle install`.
+
 ## Usage
 
-`rot135` takes a file name (or STDIN), reads it runs it through ROT13 and outputs the result to STDOUT.
-
-* Use the command line option `-5` or --five` to convert digital digits instead of alphabetical letters.
-* Use `-b` or `--both` to apply both transformations.
+`rot135` reads its input form `STDIN`, runs it through ROT13 and writes the result to STDOUT.
 
 ```bash
-> echo 'Hello World!' | rot135
-
+ > echo 'Hello World!' | rot135
+Uryyb Jbeyq!
 ```
 
 
