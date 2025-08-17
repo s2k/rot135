@@ -9,7 +9,7 @@ group :development, :test do
   gem 'amazing_print'
   gem 'cucumber'
   gem 'minitest'
-  gem 'rake', '~> 13.2'
+  gem 'rake', '~> 13.3'
   gem 'rubocop'
   gem 'rubocop-minitest'
   gem 'rubocop-rake'
