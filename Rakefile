@@ -7,7 +7,7 @@ require 'cucumber'
 require 'cucumber/rake/task'
 
 Cucumber::Rake::Task.new do |t|
-  t.cucumber_opts = '--format pretty --color' # Any valid command line option can go here.
+  t.cucumber_opts = ['--format pretty', '--color'] # Any valid command line option can go here.
 end
 
 Minitest::TestTask.create
