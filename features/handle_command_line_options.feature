@@ -1,4 +1,3 @@
-@postpone
 Feature: Processing Command Line Options
 
   Scenario: Show help text using 'help'
