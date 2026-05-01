@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "'Encrypts' named files or STDIN using ROT13."
   spec.homepage = 'https://github.com/s2k/rot135'
   spec.license = 'MIT'
-  spec.required_ruby_version = '>= 3.0.0'
+  spec.required_ruby_version = '>= 3.4'
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
