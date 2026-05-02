@@ -22,8 +22,8 @@ opts = Slop.parse do |o|
   BANNER_END
   o.separator 'Available options:'
   o.bool '-5',  '--five',     'Process decimal digits'
-  o.bool '-13', '--thirteen', "Process letters 'a'..'z' & 'A'..'Z'", default: true
-  o.bool '-b',  '--both',     'Process decimal digit & ASCII letters'
+  o.bool '-13', '--thirteen', "Process letters 'a'..'z' & 'A'..'Z' (default)", default: true
+  o.bool '-b',  '--both',     'Process decimal digit & ASCII letters (exclusive)'
   o.on   '-v', '--version',   'Print version and exit' do print_version end
   o.on   '-h', '--help', 'Show this help info and exit' do print_help(o) end
 end
