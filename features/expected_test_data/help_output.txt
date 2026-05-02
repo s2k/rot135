@@ -1,6 +1,6 @@
-usage: /Users/stephan/dev/womblegast/rot135/features/support/../../exe/rot135 [options]
+usage: .*/exe/rot135 \[options\]
     -5, --five       Process decimal digits
-    -13, --thirteen  Process letters 'a'..'z' & 'A'..'Z'
+    -13, --thirteen  Process letters 'a'\.\.'z' & 'A'\.\.'Z'
     -b, --both       Process decimal digit & ASCII letters
     -v, --version    Print version and exit
     -h, --help       Show this help info and exit
