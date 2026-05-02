@@ -13,7 +13,7 @@ end
 
 Then('the output should be as given in file {string}') do |_string|
   expected_text = File.read(File.join(EXPECTATIONS_DIR, 'help_output.txt'), chomp: true).strip
-  assert_match /#{expected_text}/, @cmd_output.strip, "Expected\n#{expected_text}\nto match\n#{@cmd_output.strip}"
+  assert_match(/#{expected_text}/, @cmd_output.strip, "Expected\n#{expected_text}\nto match\n#{@cmd_output.strip}")
 end
 
 Then('STDOUT should match gem version') do
