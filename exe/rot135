@@ -15,6 +15,12 @@ def print_help(options)
 end
 
 opts = Slop.parse do |o|
+  o.banner = <<~BANNER_END
+    usage: #{File.basename $PROGRAM_NAME} [options]"
+
+    rot135 reads its input from STDIN and transforms the read input according to the passed options
+  BANNER_END
+  o.separator 'Available options:'
   o.bool '-5',  '--five',     'Process decimal digits'
   o.bool '-13', '--thirteen', "Process letters 'a'..'z' & 'A'..'Z'", default: true
   o.bool '-b',  '--both',     'Process decimal digit & ASCII letters'

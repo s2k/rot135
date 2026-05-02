@@ -1,6 +1,10 @@
-usage: .*/exe/rot135 \[options\]
+usage: rot135 [options]"
+
+rot135 reads its input from STDIN and transforms the read input according to the passed options
+
+Available options:
     -5, --five       Process decimal digits
-    -13, --thirteen  Process letters 'a'\.\.'z' & 'A'\.\.'Z'
+    -13, --thirteen  Process letters 'a'..'z' & 'A'..'Z'
     -b, --both       Process decimal digit & ASCII letters
     -v, --version    Print version and exit
     -h, --help       Show this help info and exit
