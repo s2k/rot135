@@ -28,3 +28,9 @@ Naming/VariableNumber:
 
 Metrics/MethodLength:
   Max: 20
+
+Style/SingleLineDoEndBlock:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Enabled: false
