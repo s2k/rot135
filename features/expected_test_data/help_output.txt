@@ -1,5 +1,6 @@
-Commands:
-  rot135 help [COMMAND]  # Describe available commands or one specific command
-  rot135 rot             # The default task, applies ROT13 to STDIN
-  rot135 tree            # Print a tree of all available commands
-  rot135 version         # print version info & exit
+usage: /Users/stephan/dev/womblegast/rot135/features/support/../../exe/rot135 [options]
+    -5, --five       Process decimal digits
+    -13, --thirteen  Process letters 'a'..'z' & 'A'..'Z'
+    -b, --both       Process decimal digit & ASCII letters
+    -v, --version    Print version and exit
+    -h, --help       Show this help info and exit
