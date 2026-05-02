@@ -36,5 +36,5 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   spec.add_dependency 'mutex_m'
-  spec.add_dependency 'thor'
+  spec.add_dependency 'slop'
 end
