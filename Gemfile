@@ -10,7 +10,7 @@ group :development, :test do
   gem 'cucumber'
   gem 'minitest'
   gem 'rake'
-  gem 'rubocop'
+  gem 'rubocop', require: false
   gem 'rubocop-minitest'
   gem 'rubocop-rake'
 end
