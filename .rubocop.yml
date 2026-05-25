@@ -3,7 +3,7 @@ plugins:
   - rubocop-minitest
 
 AllCops:
-  TargetRubyVersion: 4.0
+  TargetRubyVersion: 3.3
   NewCops: enable
 
 Style/StringLiterals:
