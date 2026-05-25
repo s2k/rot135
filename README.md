@@ -55,6 +55,15 @@ also run `bin/console` for an interactive prompt that will allow you to experime
 
 To install this gem onto your local machine, run `bundle exec rake install`.
 
+## Testing
+
+This gem is tested in the following setups:
+
+Operating Systems: ubuntu-latest, macos-latest, windows-latest
+Ruby versions: : 3.3, 3.4, 4.0, jruby, truffleruby
+
+(see ➙ https://github.com/ruby/setup-ruby for details)
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/s2k/rot135. This project is intended to be a
